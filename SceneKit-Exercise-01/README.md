@@ -9,13 +9,6 @@ In this exercise you have a ready made scene consisting of a number of boxes, a 
     * Ambient
     * Directional
   * GravityField
-  * Boxes
-    * BlueBox
-    * RedBox
-    * GreenBox
-    * YellowBox
-    * PurpleBox
-    * OrangeBox
   * Floor
 
 You can view the scene on Xcode scene editor by opening the scene file at `art.scnassets/Scene.scn`.

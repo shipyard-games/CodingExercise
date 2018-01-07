@@ -13,6 +13,11 @@
 		4BB285D620009BC500CF2299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB285D520009BC500CF2299 /* Assets.xcassets */; };
 		4BB285D920009BC500CF2299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB285D720009BC500CF2299 /* Main.storyboard */; };
 		4BB285E42000D37300CF2299 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BB285E32000D37300CF2299 /* README.md */; };
+		CF5F123620023AC600929BE9 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123520023AC600929BE9 /* EntityManager.swift */; };
+		CF5F123920023C1500929BE9 /* NodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123820023C1500929BE9 /* NodeComponent.swift */; };
+		CF5F123E20023D3C00929BE9 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123D20023D3C00929BE9 /* MoveComponent.swift */; };
+		CF5F1240200241A100929BE9 /* BoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123F200241A100929BE9 /* BoxComponent.swift */; };
+		CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F1241200245E500929BE9 /* PhysicsComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		4BB285DA20009BC500CF2299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB285DB20009BC500CF2299 /* SceneKit_Exercise_01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SceneKit_Exercise_01.entitlements; sourceTree = "<group>"; };
 		4BB285E32000D37300CF2299 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF5F123520023AC600929BE9 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		CF5F123820023C1500929BE9 /* NodeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeComponent.swift; sourceTree = "<group>"; };
+		CF5F123D20023D3C00929BE9 /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		CF5F123F200241A100929BE9 /* BoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxComponent.swift; sourceTree = "<group>"; };
+		CF5F1241200245E500929BE9 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		4BB285CE20009BC500CF2299 /* SceneKit-Exercise-01 */ = {
 			isa = PBXGroup;
 			children = (
+				CF5F123320023A9C00929BE9 /* ECS */,
 				4BB285CF20009BC500CF2299 /* AppDelegate.swift */,
 				4BB285D120009BC500CF2299 /* GameViewController.swift */,
 				4BB285D320009BC500CF2299 /* art.scnassets */,
@@ -67,6 +78,26 @@
 				4BB285DB20009BC500CF2299 /* SceneKit_Exercise_01.entitlements */,
 			);
 			path = "SceneKit-Exercise-01";
+			sourceTree = "<group>";
+		};
+		CF5F123320023A9C00929BE9 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F123520023AC600929BE9 /* EntityManager.swift */,
+				CF5F123720023C0000929BE9 /* Components */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		CF5F123720023C0000929BE9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F123820023C1500929BE9 /* NodeComponent.swift */,
+				CF5F123D20023D3C00929BE9 /* MoveComponent.swift */,
+				CF5F123F200241A100929BE9 /* BoxComponent.swift */,
+				CF5F1241200245E500929BE9 /* PhysicsComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB285D220009BC500CF2299 /* GameViewController.swift in Sources */,
+				CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */,
 				4BB285D020009BC500CF2299 /* AppDelegate.swift in Sources */,
+				CF5F123E20023D3C00929BE9 /* MoveComponent.swift in Sources */,
+				CF5F1240200241A100929BE9 /* BoxComponent.swift in Sources */,
+				CF5F123620023AC600929BE9 /* EntityManager.swift in Sources */,
+				CF5F123920023C1500929BE9 /* NodeComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
