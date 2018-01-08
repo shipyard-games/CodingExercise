@@ -115,7 +115,9 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
             SCNTransaction.completionBlock = {
                 SCNTransaction.begin()
                 
-                self.entityManager.remove(node.entity!)
+                if let entity = node.entity {
+                    self.entityManager.remove(entity)
+                }
                 
                 SCNTransaction.commit()
             }
