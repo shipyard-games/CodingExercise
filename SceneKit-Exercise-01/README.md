@@ -5,6 +5,22 @@ _DISCLAIMER! This project has been tested with XCode 9.2 and macOS 10.13. If you
 
 ![Boxes](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/Boxes1.png)
 
+What We Expect of You
+---------------------
+
+This exercise is more about writing code than doing game design. Spend more time thinking about how you would code something than thinking if this is actually a good game or not.
+
+This project contains a simple "game" where boxes fall from sky on the floor and they bounce around. Players task is to destroy the boxes by clicking them. You need to:
+
+  1. Implement movement for the boxes to make the game harder.
+  2. Implement some kind of scoring system. How do you get score from hitting the boxes.
+  3. Implement simple UI to display the score.
+
+After you're satisfied with what you've done, you can email it to the person you received the task from. We will contact you after we have reviewed your implementation.
+
+What the Project Contains
+=========================
+
 In this exercise you have a ready made scene consisting of a floor, some lights, camera and physics field. The scene graph looks like this.
 
 ![Scene Graph](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/SceneGraph.png)
