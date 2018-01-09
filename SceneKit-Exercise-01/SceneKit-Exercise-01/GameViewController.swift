@@ -16,7 +16,7 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
     var lastUpdateTimeInterval: TimeInterval = 0
     let spawnInterval: TimeInterval = 2
     var spawnTime: TimeInterval = 0
-    var spawnPosition = SCNVector3(0,4,0)
+    var spawnPosition = SCNVector3(x: 0.0, y: 4.0, z: 0.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,9 +64,13 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
         // Create a box entity
         let boxEntity = GKEntity()
         
+        // Pick a random color
+        let colors: [NSColor] = [.red, .yellow, .blue, .green, .magenta]
+        let color = colors[GKARC4RandomSource().nextInt(upperBound: colors.count)]
+        
         // Add a box component to the box entity
         // The BoxComponent creates a box node
-        let boxComponent = BoxComponent(width: 1, height: 1, length: 1, boxColor: NSColor.red)
+        let boxComponent = BoxComponent(width: 1, height: 1, length: 1, boxColor: color)
         boxEntity.addComponent(boxComponent)
         
         let node = boxComponent.node
