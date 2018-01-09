@@ -31,15 +31,12 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
         // set the scene to the view
         scnView.scene = scene
         
+        // show statistics
+        scnView.showsStatistics = true
+        
         entityManager = EntityManager(scene: scene)
         let moveSystem = GKComponentSystem(componentClass: MoveComponent.self)
         entityManager.add(moveSystem)
-        
-        // Add a click gesture recognizer
-        let clickGesture = NSClickGestureRecognizer(target: self, action: #selector(handleClick(_:)))
-        var gestureRecognizers = scnView.gestureRecognizers
-        gestureRecognizers.insert(clickGesture, at: 0)
-        scnView.gestureRecognizers = gestureRecognizers
         
         spawnTime = spawnInterval
     }
@@ -93,14 +90,14 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
         entityManager.add(boxEntity)
     }
     
-    @objc
-    func handleClick(_ gestureRecognizer: NSGestureRecognizer) {
+     override func mouseUp(with event: NSEvent) {
         // retrieve the SCNView
         let scnView = self.view as! SCNView
         
         // check what nodes are clicked
-        let p = gestureRecognizer.location(in: scnView)
-        let hitResults = scnView.hitTest(p, options: [:])
+        let p = view.convert(event.locationInWindow, from: nil)
+        // using categorybitmask we only check hits with boxes
+        let hitResults = scnView.hitTest(p, options: [SCNHitTestOption.categoryBitMask : BoxComponent.bitMask])
         // check that we clicked on at least one object
         if hitResults.count > 0 {
             // retrieved the first clicked object
@@ -109,7 +106,6 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
             // get its material
             let node = result.node
             let material = node.geometry!.firstMaterial!
-
             
             // highlight it
             SCNTransaction.begin()
@@ -127,8 +123,6 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
             }
             
             material.emission.contents = NSColor.red
-            
-            
             
             SCNTransaction.commit()
         }
