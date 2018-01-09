@@ -54,11 +54,17 @@ Update Loop
 Some Debugging Tips
 -------------------
 
-The `MainScene.scn` contains only the pre-made scene with floor, lights, camera and gravity field. If you want to inspect the scene at runtime you need to run the application and press the small "plus" icon at the lower left corner of the application window. Pressing that you should be able to see this window (requires Xcode 9 and MacOS 10.13).
+The `MainScene.scn` contains only the pre-made scene with floor, lights, camera and gravity field. If you want to inspect the scene at runtime you need to run the application and press the small "settings" icon at the lower left corner of the application window. Pressing that you should be able to see this window (requires Xcode 9 and MacOS 10.13).
 
 ![Settings](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/Settings.png)
 
 In this window you can see the scene at runtime and by clicking the nodes in the scenegraph you get to inscpect the different properties of the nodes.
+
+If you press the "plus" icon you should see somethign like this.
+
+![Settings](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/Boxes2.png)
+
+This is a profiler view that tells how well your game is performing. Not too important for this task.
 
 Also, it is good to remember that you can always use XCode debugger by setting up break points to inspect what is happening in your code.
 
