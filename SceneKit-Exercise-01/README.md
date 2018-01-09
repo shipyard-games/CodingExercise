@@ -13,8 +13,8 @@ This exercise is more about writing code than doing game design. Spend more time
 This project contains a simple "game" where boxes fall from sky on the floor and they bounce around. Players task is to destroy the boxes by clicking them. You need to:
 
   1. Implement movement for the boxes to make the game harder.
-  2. Implement some kind of scoring system. How do you get score from hitting the boxes.
-  3. Implement simple UI to display the score.
+  2. Implement some kind of scoring system. How do you get score from hitting the boxes?
+  3. _Bonus:_ If you still have the time and energy, implement a simple UI to display the score.
 
 After you're satisfied with what you've done, you can email it to the person you received the task from. We will contact you after we have reviewed your implementation.
 
