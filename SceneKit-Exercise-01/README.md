@@ -1,17 +1,13 @@
 Colorful Boxes
 ==============
 
-In this exercise you have a ready made scene consisting of a number of boxes, a floor, some lights, camera and physics field. The scene graph looks like this.
+![Boxes](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/Boxes1.png)
 
-* Scene Graph
-  * Camera
-  * Lights
-    * Ambient
-    * Directional
-  * GravityField
-  * Floor
+In this exercise you have a ready made scene consisting of a floor, some lights, camera and physics field. The scene graph looks like this.
 
-You can view the scene on Xcode scene editor by opening the scene file at `art.scnassets/Scene.scn`.
+![Scene Graph](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/SceneGraph.png)
+
+You can view the scene on Xcode scene editor by opening the scene file at `art.scnassets/MainScene.scn`.
 
 The coordinate system and camera is depicted in the image below. The gravity field has been set to point towards negative Y-axis.
 
@@ -20,7 +16,17 @@ The coordinate system and camera is depicted in the image below. The gravity fie
 The `GameViewController`
 ------------------------
 
-The `GameViewController.swift` contains `viewDidLoad` method that loads the scene from the scene file and setups the `SCNView` to display that scene. This file also has example on how to setup a `NSClickGestureRecognizer` that will detect mouse clicks and do a hittest in the scene to see which node was clicked. The node is highlighted with a short animation.
+The `GameViewController.swift` contains `viewDidLoad` method that loads the scene from the scene file and setups the `SCNView` to display that scene. It also initializes the `EnityManager` and the component system.
+
+`EntityManager` and Component System
+------------------------------------
+
+The `EntityManager.swift` contains code for a simple manager that handles the entities in the game world and runs the update loop for all component systems. Component system has following components implemented...
+
+* `NodeComponent` - this component is required so that the entity manager adds the node to the scene.
+* `BoxComponent` - creates a box geometry.
+* `MoveComponent` - has update loop that moves the node. Currently only applies small force impulse with certain time interval that makes the entity jump.
+* `PhysicsComponent` - adds the physics shape and physics body configuration for entity.
 
 The SceneKit
 ------------
