@@ -1,6 +1,8 @@
 SceneKit-Exercise-01
 ====================
 
+_DISCLAIMER! This project has been tested with XCode 9.2 and macOS 10.13. If your system is not running these versions there might be issues. We are well aware that getting XCode projects running might be a tedious task. If the application does not run after pressing "play", let us know. Point of this exercise is not to spend time fighting with Xcode._
+
 ![Boxes](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/Images/Boxes1.png)
 
 In this exercise you have a ready made scene consisting of a floor, some lights, camera and physics field. The scene graph looks like this.
