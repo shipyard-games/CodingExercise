@@ -21,7 +21,7 @@ After you're satisfied with what you've done, you can email it to the person you
 What If I don't Havem a mac / XCode?
 ---------------------
 
-If you do not have a mac or access to one, you can do this exercise with Unity. Just download Unity from https://unity3d.com and install. 
+If you do not have a mac or access to one, you can do this exercise with Unity https://unity3d.com.
 
 We will send you a video of how the XCode project runs and you can replicate it in Unity. The video shows boxes of different colours appearing and falling down as the floor appears to shake from time to time. When a box is clicked it disappears. SceneKit uses a similar entity-component system design as Unity and therefore the Swift code you see in the XCode project can easily be replicated in Unity. It is also a good way to start learning about SceneKit and Swift. 
 
