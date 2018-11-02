@@ -18,7 +18,7 @@ This project contains a simple "game" where boxes fall from sky on the floor and
 
 After you're satisfied with what you've done, you can email it to the person you received the task from. 
 
-What If I don't Havem a mac / XCode?
+What If I don't Have a mac / XCode?
 ---------------------
 
 If you do not have a mac or access to one, you can do this exercise with Unity https://unity3d.com.
