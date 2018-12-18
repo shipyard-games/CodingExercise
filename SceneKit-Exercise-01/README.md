@@ -19,12 +19,13 @@ This project contains a simple "game" where boxes fall from sky on the floor and
 After you're satisfied with what you've done, you can email it to the person you received the task from. 
 
 What If I don't Have a mac / XCode?
----------------------
+-----------------------------------
 
 If you do not have a mac or access to one, you can do this exercise with Unity https://unity3d.com.
 
-We will send you a video of how the XCode project runs and you can replicate it in Unity. The video shows boxes of different colours appearing and falling down as the floor appears to shake from time to time. When a box is clicked it disappears. SceneKit uses a similar entity-component system design as Unity and therefore the Swift code you see in the XCode project can easily be replicated in Unity. It is also a good way to start learning about SceneKit and Swift. 
+Below is a video of the macOS version of the exercise running and you can replicate it in Unity. The video shows boxes of different colours appearing and falling down as the floor appears to shake from time to time. When a box is clicked it disappears. SceneKit uses a similar entity-component system design as Unity and therefore the Swift code you see in the XCode project can easily be replicated in Unity. It is also a good way to start learning about SceneKit and Swift. 
 
+![Video](https://github.com/shipyard-games/CodingExercise/raw/master/SceneKit-Exercise-01/SceneKit-Exercise-01/SceneKit-Exercise-Video.mov)
 
 What the Project Contains
 =========================
