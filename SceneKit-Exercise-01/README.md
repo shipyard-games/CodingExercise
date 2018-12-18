@@ -8,15 +8,23 @@ _DISCLAIMER! This project has been tested with XCode 9.2 and macOS 10.13. If you
 What We Expect of You
 ---------------------
 
-This exercise is more about writing code than doing game design. Spend more time thinking about how you would code something than thinking if this is actually a good game or not.
+This exercise is more about writing code than doing game design. Spend more time thinking about how you would code something than thinking if this is actually a good game or not. We value reusable and compartmentalized code rather than do-it-all classes. Design this small project in a way that if this would be a larger game project you could manage your code easily.
 
-This project contains a simple "game" where boxes fall from sky on the floor and they bounce around. Players task is to destroy the boxes by clicking them. You need to:
+This project contains a simple "game" where boxes fall from sky on the floor and they bounce around. Player’s task is to destroy the boxes by clicking them. You need to think how can you make this into a game with a start, an end and a clear goal for the player:
 
   1. Implement movement for the boxes to make the game harder.
   2. Implement some kind of scoring system. How do you get score from hitting the boxes?
-  3. _Bonus:_ If you still have the time and energy, implement a simple UI to display the score.
+  3. Implement a simple UI to display the score.
 
-After you're satisfied with what you've done, you can email it to the person you received the task from. We will contact you after we have reviewed your implementation.
+After you're satisfied with what you've done, you can email it to the person you received the task from. 
+
+What If I don't Have a mac / XCode?
+---------------------
+
+If you do not have a mac or access to one, you can do this exercise with Unity https://unity3d.com.
+
+We will send you a video of how the XCode project runs and you can replicate it in Unity. The video shows boxes of different colours appearing and falling down as the floor appears to shake from time to time. When a box is clicked it disappears. SceneKit uses a similar entity-component system design as Unity and therefore the Swift code you see in the XCode project can easily be replicated in Unity. It is also a good way to start learning about SceneKit and Swift. 
+
 
 What the Project Contains
 =========================
